@@ -17,6 +17,8 @@
   align-items: center;
   flex-wrap: nowrap;
   flex-shrink: 0;
+  flex-grow: 1;
+  word-break: break-all;
 }
 
 ._top, ._bottom {
