@@ -17,8 +17,7 @@
   align-items: center;
   flex-wrap: nowrap;
   flex-shrink: 0;
-  flex-grow: 1;
-  word-break: break-all;
+  overflow: hidden;
 }
 
 
@@ -48,9 +47,32 @@
 }
 
 ._center_first_img {
-  padding: 6rem 12rem 6rem 12rem;
-
+  padding: 6rem 6rem 6rem 12rem;
   img {
     max-height: 800px;
+  }
+}
+
+._top_img {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 6rem 6rem 6rem 6rem;
+  height: 100%;
+
+  img {
+    max-height: 500px;
+  }
+}
+
+._bottom_img {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 6rem 6rem 6rem 6rem;
+  height: 100%;
+
+  img {
+    max-height: 500px;
   }
 }

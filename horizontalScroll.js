@@ -57,7 +57,7 @@ window.addEventListener("load", function () {
 
       //  _First figure
       gsap.to("._figure", {
-        xPercent: 80,
+        // xPercent: 80,
         scale: 1.5,
         duration: 2,
         ease: "none",
