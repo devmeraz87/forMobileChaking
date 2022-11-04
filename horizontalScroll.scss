@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.horizontal-scroll {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+
+.pin-wrap {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+}
+
+
+._top, ._bottom {
+  height: 100vh;
+  width: 100%;
+}
+
+
+._figure {
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+}
+
+._figure_inner {
+  transform: scale(2.5);
+}
+
+
+._figure_2 {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-color: #fff;
+  flex-shrink: 1;
+}
+
+._center_first_img {
+  padding: 6rem 12rem 6rem 12rem;
+
+  img {
+    max-height: 800px;
+  }
+}

@@ -1,4 +1,4 @@
-window.addEventListener("load", function () {
+// window.addEventListener("load", function () {
   gsap.registerPlugin(ScrollTrigger);
 
   const pageContainer = document.querySelector(".container");
@@ -83,7 +83,9 @@ window.addEventListener("load", function () {
 
   });
 
-  ScrollTrigger.addEventListener("refresh", () => scroller.update());
+  ScrollTrigger.addEventListener("refresh", () => { 
+    scroller.update()
+  });
 
   ScrollTrigger.refresh();
-});
+// });
