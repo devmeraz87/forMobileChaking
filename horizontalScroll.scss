@@ -49,10 +49,11 @@
   background-color: #fff;
   flex-shrink: 0;
   height: 100vh;
-  padding: 6rem 2rem;
+  padding: 8rem 2rem;
 }
 
 ._center_first_img {
+  position: relative;
   padding-left: 12rem;
   display: flex;
   align-items: center;
@@ -60,17 +61,44 @@
   img {
     height: 100%;
   }
+
+
+  ._marquee_3 {
+    position: absolute;
+    transform: rotate(-90deg);
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    right: -1700px;
+
+    ._gsap_marquee_3 {
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+      font-size: 160px;
+      white-space: pre-wrap;
+
+      .line {
+        height: 3px;
+        width: 100px;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        background-color: black;
+      }
+    }
+  }
+
 }
 
 ._top_img {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-left: 12rem;
+  padding-left: 24rem;
   height: 100%;
 
   img {
-    max-height: 350px;
+    max-height: 450px;
   }
 }
 
@@ -82,7 +110,7 @@
   padding-left: 12rem;
 
   img {
-    max-height: 350px;
+    max-height: 450px;
   }
 }
 
@@ -114,15 +142,15 @@
 ._video {
   height: 100%;
   padding-left: 12rem;
-  padding-right: 6rem;
+  padding-right: 12rem;
 
   ._video_container {
     height: 100%;
-    max-width: 800px;
+    max-width: 1000px;
   }
 
   video {
     height: 100%;
-    max-width: 800px;
+    max-width: 1000px;
   }
 }
