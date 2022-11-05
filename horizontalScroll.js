@@ -57,8 +57,8 @@ window.addEventListener("load", function () {
 
       //  _First figure
       gsap.to("._figure", {
-        // xPercent: 80,
-        scale: 1.5,
+        xPercent: 100,
+        scale: 2,
         duration: 2,
         ease: "none",
         scrollTrigger: {
@@ -68,6 +68,22 @@ window.addEventListener("load", function () {
           scrub: true
         }
       });
+
+      setTimeout(() => {
+        //  _First figure
+        gsap.to("._figure", {
+          xPercent: -110,
+          scale: 2,
+          duration: 2,
+          ease: "none",
+          scrollTrigger: {
+            trigger: "._figure_2",
+            containerAnimation: scrollTween,
+            delay: 3,
+            scrub: true
+          }
+        });
+      }, 3000);
 
       // >> Scalse figure inner // >> impossible to scale up figure form so in do inner
       gsap.to("._figure_inner", {
@@ -115,10 +131,10 @@ window.addEventListener("load", function () {
 
 
     
-    ScrollTrigger.addEventListener("refresh", () => { 
-      scroller.update()
-    });
+    // ScrollTrigger.addEventListener("refresh", () => { 
+    //   scroller.update()
+    // });
   
-    ScrollTrigger.refresh();
+    // ScrollTrigger.refresh();
   });
   
