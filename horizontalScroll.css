@@ -135,4 +135,8 @@
 ._video video {
   height: 100%;
   max-width: 1000px;
+}
+
+.hidden {
+  display: none !important;
 }/*# sourceMappingURL=horizontalScroll.css.map */
